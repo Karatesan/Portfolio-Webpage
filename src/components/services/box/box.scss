@@ -1,0 +1,63 @@
+@import "../../../app.scss";
+
+.box{
+  perspective: 1000px;
+  position: relative;
+  width: 300px;
+
+  .card{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+
+    .front,.back{
+    text-wrap:wrap;
+    height: 100%;
+    width: 100%;
+    border:0.5px solid gray;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    backface-visibility: hidden;
+    position: absolute;
+
+    @include mobile {
+      border: none;
+      align-items: center;
+      padding: 10px;
+    }
+    .imageContainer{
+      width: 200px;
+      height: 200px;
+
+      img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    h2{
+      text-align: center;
+      font-size: 30px;
+    }
+
+    p{
+      @include mobile{
+         display: none;     
+     }
+    
+     }
+    }
+    .back{
+      transform: rotateY(180deg);
+    }
+  }
+    .card:hover {
+    transform: rotateY(180deg);
+  }
+}

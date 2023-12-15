@@ -1,0 +1,65 @@
+html{
+    scroll-snap-type: y mandatory; //This property is used to control the snap points of the scrolling container on the vertical axis (y). The value mandatory means that the scrolling will always snap to the nearest snap point.
+    scroll-behavior:smooth;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: "DM Sans",sans-serif;
+}
+
+section{
+    height:100vh;
+  // border:1px solid yellow;
+    scroll-snap-align:center; // This property specifies where the snap point of the scrolling container should be when it stops scrolling
+}
+
+body{
+    background-color: #0c0c1d;
+    color: lightgray;
+
+}
+
+// body, html {
+//     overflow-x: hidden;
+//     }
+
+a{
+    text-decoration: none;
+    color: inherit;  //dziedziczymy kolor z rodzica - w tym przypadku body
+}
+
+@mixin mobile {
+    @media (max-width: 738px){
+        @content;
+    }
+
+}
+
+@mixin tablet {
+    @media (max-width: 1024px){
+        @content;
+    }
+
+}
+
+@mixin mobdesktopile {
+    @media (max-width: 1366px){
+        @content;
+    }
+
+}
+
+// .progress-bar {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     height: 5px;
+//     background:red;
+//     transform-origin: 0%;
+//     z-index: 999;
+//   }
+
