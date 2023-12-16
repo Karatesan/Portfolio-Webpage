@@ -47,7 +47,7 @@ const skills = [
   {
     id: 0,
     title: "Java",
-    image: "../public/Java.png",
+    image: `${import.meta.env.BASE_URL}src/assets/Java.png`,
     content: [
       "Core JAVA",
       "Hibernate & JDBC & JPA",
@@ -67,7 +67,7 @@ const skills = [
   {
     id: 1,
     title: "JavaScript",
-    image: "../public/JavaScript.png",
+    image: `${import.meta.env.BASE_URL}src/assets/JavaScript.png`,
     content: [
       "ES6+ Features",
       "Asynchronous JavaScript (Promises, async/await)",
@@ -85,7 +85,7 @@ const skills = [
   {
     id: 2,
     title: "React",
-    image: "../public/react.png",
+    image: `${import.meta.env.BASE_URL}src/assets/react.png`,
     content: [
       "React Components and Props",
       "Hooks (useState, useEffect, useContext, etc.)",
@@ -100,7 +100,7 @@ const skills = [
   {
     id: 3,
     title: "C++",
-    image: "../public/c++.png",
+    image: `${import.meta.env.BASE_URL}src/assets/c++.png`,
     content: [
       "C++ Basics",
       "Object-Oriented Programming (OOP)",
@@ -148,7 +148,10 @@ const Services = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="../public/skills.jpg" alt="" />
+          <img
+            src={`${import.meta.env.BASE_URL}src/assets/skills.jpg`}
+            alt=""
+          />
           <h1>
             <b>Skills </b>And <b>Expertise</b>
           </h1>

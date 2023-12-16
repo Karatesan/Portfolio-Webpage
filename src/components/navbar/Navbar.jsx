@@ -22,16 +22,16 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
         >
           <a href="https://github.com/Karatesan">
-            <img src="/github.png" alt="" />
+            <img src={`${import.meta.env.BASE_URL}src/assets/github.png`} alt="" />
           </a>
           <a href="#">
-            <img src="/instagram.png" alt="" />
+            <img src={`${import.meta.env.BASE_URL}src/assets/instagram.png`} alt="" />
           </a>
           <a href="#">
-            <img src="/youtube.png" alt="" />
+            <img src={`${import.meta.env.BASE_URL}src/assets/youtube.png`} alt="" />
           </a>
           <a href="linkedin.com/in/maciej-gomulec-59a826221">
-            <img src="/linkedin.png" alt="" />
+            <img src={`${import.meta.env.BASE_URL}src/assets/linkedin.png`} alt="" />
           </a>
         </motion.div>
       </div>

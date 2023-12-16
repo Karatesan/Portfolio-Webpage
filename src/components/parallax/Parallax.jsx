@@ -5,7 +5,6 @@ import {
   useMotionValueEvent,
   useScroll,
   useTransform,
-
 } from "framer-motion";
 
 const Parallax = ({ type }) => {
@@ -36,14 +35,14 @@ const Parallax = ({ type }) => {
       <motion.h1 style={{ y: yText }}>
         {type === "services" ? "My Skills" : "My Projects"}
       </motion.h1>
-      <motion.div
-        className="mountains"
-      ></motion.div>
+      <motion.div className="mountains"></motion.div>
       <motion.div
         style={{
           y: yBg,
           backgroundImage: `url(${
-            type === "services" ? "../public/planets.png" : "../public/sun.png"
+            type === "services"
+              ? `${import.meta.env.BASE_URL}src/assets/planets.png`
+              : `${import.meta.env.BASE_URL}src/assets/sun.png`
           })`,
         }}
         className="planets"

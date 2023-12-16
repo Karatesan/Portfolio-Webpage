@@ -18,7 +18,11 @@ const items = [
   {
     id: 1,
     title: "Game Blog ",
-    img: ["/BlogPageImage1.png", "/BlogPageImage2.png", "/BlogPageImage3.png"],
+    img: [
+      `${import.meta.env.BASE_URL}src/assets/BlogPageImage1.png`,
+      `${import.meta.env.BASE_URL}src/assets/BlogPageImage2.png`,
+      `${import.meta.env.BASE_URL}src/assets/BlogPageImage3.png`,
+    ],
     desc: [
       "Game Blog Web App is an platform created with a Spring Boot backend and a React frontend using Vite, coupled with MongoDB.",
       "On the frontend, I employed React powered by Vite for a dynamic and responsive user interface.",
@@ -33,13 +37,13 @@ const items = [
     id: 2,
     title: "Mock Exam webapp",
     img: [
-      "/m (7).png",
-      "/m (2).png",
-      "/m (1).png",
-      "/MockExam3 (9).png",
-      "/m (4).png",
-      "/m (5).png",
-      "/m (3).png",
+      `${import.meta.env.BASE_URL}src/assets/m (7).png`,
+      `${import.meta.env.BASE_URL}src/assets/m (2).png`,
+      `${import.meta.env.BASE_URL}src/assets/m (1).png`,
+      `${import.meta.env.BASE_URL}src/assets/MockExam3 (9).png`,
+      `${import.meta.env.BASE_URL}src/assets/m (4).png`,
+      `${import.meta.env.BASE_URL}src/assets/m (5).png`,
+      `${import.meta.env.BASE_URL}src/assets/m (3).png`,
     ],
 
     desc: [

@@ -102,7 +102,7 @@ const Hero = () => {
           <motion.img
             variants={textVariants}
             animate="scrollButton"
-            src="/scroll.png"
+            src={`${import.meta.env.BASE_URL}src/assets/scroll.png`}
             alt=""
           />
         </motion.div>
@@ -116,7 +116,7 @@ const Hero = () => {
         Java React JavaScript C++
       </motion.div>
       <div className="imageContainer">
-        <img src="/result.png" alt="" />
+        <img src={`${import.meta.env.BASE_URL}src/assets/result.png`} alt="" />
       </div>
     </div>
   );
